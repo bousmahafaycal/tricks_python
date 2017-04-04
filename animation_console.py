@@ -1,6 +1,6 @@
 """
 Module permettant d'afficher une barre de progression 
-Créé le 02/04/2017
+Créé le 04/04/2017
 Par Fayçal Bousmaha
 """
 
