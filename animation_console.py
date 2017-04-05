@@ -14,9 +14,7 @@ class ProgressBar:
 
 	def add (self,increment): 
 		# Ajoute l'increment au pourcentage actuel
-		self.current += increment
-		if self.current > 100:
-			self.current = 100
+		self.current = self.current + increment if self.current + increment < 100 else 100  # 1 line optimization
 
 
 	def show (self):
@@ -37,4 +35,4 @@ if __name__ == "__main__":
 	while not prog.isFinished():
 		prog.show()
 		time.sleep(0.5)
-		prog.add(5)
+		prog.add(10)
